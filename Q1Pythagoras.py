@@ -1,2 +1,19 @@
-# Create a program that will accept the two legs of a right-angle triangle, a and b, and display the length of the hypotenuse, c. 
-# Remember to use prompts for the input and labels for the output. Use the formula a2 + b2 = c2 to calculate your answer.
+import math 
+a = True
+while a == True:
+    try:
+        A = float(input("Triangle leg 1 length "))
+    except:
+        print("please use a number")
+        exit()
+    try:
+        B = float(input("Triangle leg 2 length "))
+    except:
+        print("please use a number")
+        exit()
+    a=False
+A = A*A 
+B = B*B 
+C = A+B 
+C = math.sqrt(C)
+print("The length of the hypotenuse is ",C,". Thank you for using this simple calculator.")
