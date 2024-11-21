@@ -1,2 +1,12 @@
-# Create a program that will ask the user an addition question. 
-# The program will generate two random numbers between 1 and 100, and display them as an addition question with appropriate prompts.
+
+import random 
+random.seed()
+A = random.randint(1,100)
+B = random.randint(1,100)
+C = A + B
+print("beep boop\ndoing number stuff\n. . .\n......")
+D = int(input(str(A) + " + " + str(B) + " = ? "))
+if D == C:
+    print("Correct ur so cool")
+else:
+    print("Sandly wrong and uncool")
